@@ -7,7 +7,7 @@ var dog = "dog"
 if (cat.length == 3){
   console.log("is the length")
 }
-if (cat.length == dog.length){
+if (cat == dog){
   console.log("is the same")
 } else {
   console.log("not the same")
@@ -34,7 +34,7 @@ if (person.name[0] == "B" && person.age >= 18) {
 if (1 === "1") {
   console.log("strict")
 } else if (1 == "1"){
-  console.log("loose or abstract")
+  console.log("abstract")
 } else {
   console.log("not equal at all")
 }
@@ -54,10 +54,10 @@ if (typeof true === "boolean"){
 } else {
   console.log("not Boolean")
 } 
-if (typeof myVar === "undefined"){
-  console.log("Undefined")
-} else {
+if (typeof myVar != "undefined"){
   console.log("Defined")
+} else {
+  console.log("Undefined")
 }
 if ("s" > 12){
   console.log("s is greater than 12")
